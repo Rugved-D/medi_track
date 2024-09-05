@@ -1,0 +1,92 @@
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Top notification bar */
+.top-bar {
+  background-color: #6b47dc;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Doctors Section */
+.doctors {
+  padding: 40px 50px;
+  background-color: #f7f7f7;
+}
+
+.doctors h2 {
+  text-align: center;
+  color: #432b89;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.doctor-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card h3 {
+  color: #4caf50;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+}
+
+.doctor-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.doctor-card button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.doctor-card button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,109 @@
+/* Info Section */
+.info-section {
+  text-align: center;
+  padding: 100px 50px;
+  background-color: #f9f9f9;
+}
+
+.info-section h2 {
+  font-size: 2.5rem;
+  color: #432b89;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.info-form label {
+  font-size: 1.2rem;
+  color: #432b89;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.info-form select,
+.info-form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-form input[type="text"]::placeholder {
+  color: #999;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #432b89;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #6b47dc;
+}

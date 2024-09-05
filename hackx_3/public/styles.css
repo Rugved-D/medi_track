@@ -1,0 +1,234 @@
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Top notification bar */
+.top-bar {
+  background-color: #6b47dc;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #432b89;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #6b47dc;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.location {
+  font-size: 1.1rem;
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #432b89;
+}
+
+.logo small {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #7d5fbc;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #432b89;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #6b47dc;
+}
+
+.profile {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 80%;
+}
+
+.grid-row {
+  display: contents;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item h2 {
+  color: #4caf50;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.grid-item button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.grid-item button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Slider Container */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  font-size: 1.5rem; /* Larger than the navigation font size */
+  background-color: #f2f2f2; /* A subtle background color */
+  color: #432b89; /* Matching the theme's color */
+  padding: 20px 0; /* Adds vertical padding for visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A light shadow for depth */
+  position: relative; /* Positions relative to layout */
+  z-index: 10; /* Ensures it is above other content if necessary */
+}
+
+/* Slides Container */
+.slides {
+  display: flex;
+  white-space: nowrap; /* Ensures text stays in one line */
+  animation: slide 15s linear infinite; /* Faster continuous animation */
+}
+
+/* Individual Slide */
+.slide {
+  min-width: 100%; /* full width for each slide to maintain continuous flow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  } /* Start from right */
+  to {
+    transform: translateX(-100%);
+  } /* End at left */
+}
